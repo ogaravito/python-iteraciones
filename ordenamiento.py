@@ -2,9 +2,9 @@
 ╔════════════════════════════════╗
 ║  ALGORITMOS DE ORDENAMIENTO    ║
 ╠════════════════════════════════╣
-║ Burbuja                        ║
-║ Selección                      ║
-║ Inserción                      ║
+║ Burbuja (BubleSort)            ║
+║ Selección (SelectionSort)      ║
+║ Inserción (insertionSort)      ║
 ║ Inserción Binaria              ║
 ║ Shell                          ║
 ║ Rápido                         ║
@@ -12,16 +12,14 @@
 ╚════════════════════════════════╝
 """
 
+
 def BubleSort(lista):
     n=len(lista)
-    k=1
     for i in range(n-1):
         for j in range(i+1,n):
             if lista[i]>lista[j]:
                 lista[i],lista[j]=lista[j],lista[i]
-            k+=1
     return lista
-
 
 def SelectionSort(lista):
     n=len(lista)
